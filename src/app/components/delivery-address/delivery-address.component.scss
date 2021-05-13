@@ -1,0 +1,27 @@
+$delivery-address-container: 'delivery-address-container';
+$delivery-address-title: 'delivery-address-title';
+$delivery-address-form: 'delivery-address-form';
+$breakpoint-mobile: 720px;
+.#{$delivery-address-container} {
+  border: 2px solid #ede9ea;
+  .#{$delivery-address-title} {
+    border-bottom: 2px solid #000;
+    font-weight: bold;
+    padding-left: 15px;
+  }
+  .#{$delivery-address-form} {
+    display: flex;
+    justify-content: center;
+    padding: 50px 0;
+  }
+}
+@media (max-width: $breakpoint-mobile) {
+  .#{$delivery-address-container} {
+    width: 95%;
+    .#{$delivery-address-title} {
+      display: flex;
+      justify-content: center;
+      padding: 0;
+    }
+  }
+}

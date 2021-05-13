@@ -1,0 +1,26 @@
+<div class="summary-container" *ngIf="!!service.summaryConfig">
+  <div class="summary-title">
+    <p class="summary-title-paragraph">{{ service.summaryConfig.Title }}</p>
+  </div>
+  <div class="summary-list">
+    <blacksip-item *ngFor="let item of service.items" [item]="item"></blacksip-item>
+  </div>
+  <div class="summary-edit-field">
+    <button class="summary-button">{{ service.summaryConfig.Button }}</button>
+  </div>
+  <div class="summary-sub-total">
+    <div class="sub-total-labels">
+      <span>{{service.summaryConfig.SubtotalLabel}}</span><br />
+      <span>{{service.summaryConfig.ShippingValueLabel}}</span>
+    </div>
+    <div class="sub-total-values">
+      <span>8192898</span><br />
+      <span>{{service.summaryConfig.ShippingValue}}</span>
+    </div>
+  </div>
+  <div class="summary-total">
+    <div>
+      <span>{{service.summaryConfig.TotalLabel}}</span>
+    </div>
+  </div>
+</div>

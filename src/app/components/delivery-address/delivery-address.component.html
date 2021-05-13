@@ -1,0 +1,8 @@
+<div class="delivery-address-container" *ngIf="!!service.deliveryAddressConfig">
+  <div class="delivery-address-title">
+    <p>{{ service.deliveryAddressConfig.Title }}</p>
+  </div>
+  <div class="delivery-address-form">
+    <blacksip-delivery-form [config]="service.deliveryAddressConfig"></blacksip-delivery-form>
+  </div>
+</div>

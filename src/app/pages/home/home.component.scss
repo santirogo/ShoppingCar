@@ -1,0 +1,28 @@
+$home-container: 'home-container';
+$delivery-address: 'delivery-address';
+$summary: 'summary';
+$breakpoint-mobile: 768px;
+.#{$home-container} {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  .#{$delivery-address} {
+    margin-right: 5%;
+    width: 55%;
+  }
+  .#{$summary} {
+    width: 30%;
+  }
+}
+@media (max-width: $breakpoint-mobile) {
+  .#{$home-container} {
+    .#{$delivery-address} {
+      margin-right: 0;
+      margin-bottom: 50px;
+      width: 100%;
+    }
+    .#{$summary} {
+      width: 100%;
+    }
+  }
+}

@@ -1,0 +1,55 @@
+$summary-container: 'summary-container';
+$summary-title: 'summary-title';
+$summary-title-paragraph: 'summary-title-paragraph';
+$summary-edit-field: 'summary-edit-field';
+$summary-button: 'summary-button';
+$summary-sub-total: 'summary-sub-total';
+$sub-total-values: 'sub-total-values';
+$summary-total: 'summary-total';
+$breakpoint-mobile: 768px;
+.#{$summary-container} {
+  border: 2px solid #ede9ea;
+  .#{$summary-title} {
+    background-color: #ede9ea;
+    display: flex;
+    justify-content: center;
+    .#{$summary-title-paragraph} {
+      font-weight: bold;
+    }
+  }
+  .#{$summary-edit-field} {
+    display: flex;
+    justify-content: flex-end;
+    margin: 15px 0;
+    .#{$summary-button} {
+      background-color: #e33e67;
+      border: none;
+      color: #fff;
+      cursor: pointer;
+      height: 30px;
+      margin-right: 15px;
+      padding: 0 10px;
+    }
+  }
+  .#{$summary-sub-total} {
+    background-color: #ede9ea;
+    display: flex;
+    font-weight: 500;
+    justify-content: space-between;
+    padding: 15px;
+    .#{$sub-total-values} {
+      text-align: right;
+    }
+  }
+  .#{$summary-total} {
+    background-color: #000;
+    color: #fff;
+    font-weight: 500;
+    padding: 15px;
+  }
+}
+@media (max-width: $breakpoint-mobile) {
+  .#{$summary-container} {
+    width: 95%;
+  }
+}

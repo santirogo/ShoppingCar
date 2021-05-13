@@ -1,0 +1,19 @@
+$item-container: 'item-container';
+$item-image: 'item-image';
+$item-name: 'item-name';
+$item-price: 'item-price';
+.#{$item-container} {
+  border-bottom: 1px solid #ede9ea;
+  display: flex;
+  padding: 20px 15px;
+  .#{$item-name} {
+    align-self: center;
+  }
+  .#{$item-name} {
+    color: #bfbcbd;
+    padding: 0 15px;
+  }
+  .#{$item-price} {
+    align-self: center;
+  }
+}

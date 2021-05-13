@@ -1,0 +1,30 @@
+<form [formGroup]="form">
+  <div class="delivery-form-container">
+    <div class="form-input" *ngFor="let inputField of config.Inputs; let i = index">
+      <div class="input-icon">
+        <fa-icon class="icon-image" [icon]="['fas', inputField.Icon]"></fa-icon>
+      </div>
+      <input
+        *ngIf="i !== constants.POSTAL_CODE_INDEX"
+        type="text"
+        [placeholder]="inputField.PlaceHolder"
+        formControlName="input{{i}}"
+      />
+      <input
+        #postalCode
+        *ngIf="i === constants.POSTAL_CODE_INDEX"
+        type="text"
+        [placeholder]="inputField.PlaceHolder"
+        (blur)="onBlur(postalCode.value)"
+        formControlName="input{{i}}"
+      />
+    </div>
+    <div class="buttons-section">
+      <button class="form-button">{{ config.Buttons[0] }}</button>
+      <button class="form-button" (click)="submit()">{{ config.Buttons[1] }}</button>
+    </div>
+    <div class="check-section">
+      <input type="checkbox" id="cbox" value="second_checkbox"> <label for="cbox">{{ config.CheckboxInfo }}</label>
+    </div>
+  </div>
+</form>

@@ -1,0 +1,62 @@
+{
+  "DeliveryAddress": {
+    "Title": "DIRECCIÓN DE ENVÍO",
+    "Inputs": [
+      {
+        "Icon": "user",
+        "PlaceHolder": "Nombre"
+      },
+      {
+        "Icon": "user",
+        "PlaceHolder": "Apellidos"
+      },
+      {
+        "Icon": "envelope",
+        "PlaceHolder": "Correo Electrónico"
+      },
+      {
+        "Icon": "phone-alt",
+        "PlaceHolder": "Número de teléfono"
+      },
+      {
+        "Icon": "map-marker-alt",
+        "PlaceHolder": "Código postal"
+      },
+      {
+        "Icon": "map-marker-alt",
+        "PlaceHolder": "Colonia"
+      },
+      {
+        "Icon": "map-marker-alt",
+        "PlaceHolder": "Estado/Región"
+      },
+      {
+        "Icon": "map-marker-alt",
+        "PlaceHolder": "Ciudad"
+      },
+      {
+        "Icon": "map-marker-alt",
+        "PlaceHolder": "Delegación o municipio"
+      },
+      {
+        "Icon": "map-marked-alt",
+        "PlaceHolder": "Calle"
+      }
+    ],
+    "Buttons": [
+      "Libreta de direcciones",
+      "Guardar"
+    ],
+    "CheckboxInfo": "Utilizar como dirección de facturación",
+    "SuccessMessage": "Datos enviados correctamente",
+    "ErrorMessage": "Error en el envío de datos"
+  },
+  "Summary": {
+    "Title": "RESUMEN DE LA ORDEN",
+    "Button": "Editar",
+    "SubtotalLabel": "SUBTOTAL",
+    "ShippingValueLabel": "ENVÍO",
+    "ShippingValue": "A calcular",
+    "TotalLabel": "Total"
+  }
+}
